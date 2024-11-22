@@ -61,67 +61,12 @@
     width: 60%;
     margin: 0px auto 60px;
   }
-  hr {
-    color: var(--primary);
-    border-color: var(--primary);
-    background-color: var(--primary);
-  }
-  header img {
-    height: 200px;
-  }
-  header > :last-child {
-    margin-bottom: 0px;
-  }
-  .center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  #status {
-    font-family: "minecraft";
-    margin: 0px;
-    font-size: 20pt;
-    animation-name: text-scale;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    text-indent: 0px;
-    overflow-wrap: anywhere;
-    width: 775px;
-    text-align: center;
-    cursor: pointer;
-    text-shadow: 0px 0px 10px black;
-  }
-  @keyframes text-scale {
-    0% {
-      transform: scale(1);
-    }
-    50% {
-      transform: scale(1.1);
-    }
-    100% {
-      transform: scale(1);
-    }
-  }
-  .unselectable {
-    -moz-user-select: -moz-none;
-    -khtml-user-select: none;
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-  }
   /* Main styles */
   main {
     margin: 0 auto;
     width: 60%;
     position: relative;
     padding-bottom: 32px;
-  }
-  
-  @media screen and (max-width: 1200px) {
-    main, header {
-      width: 95%; /* Adjust the width for smaller screens */
-    }
   }
   
   section {
@@ -151,67 +96,8 @@
     border-radius: 10px 10px 25px 25px;
     margin-bottom: 45px;
   }
-  .multisection {
-    display: flex;
-    align-items: stretch;
-    gap: 15px;
-  }
   footer {
     text-align: center;
-  }
-  .navbtn {
-    position: relative;
-    padding: 0px 15px;
-    background-color: black;
-    border-color: var(--primary);
-    border-style: solid;
-    border-width: 5px 5px 13px 5px;
-    box-shadow: 0px 0px 13px black;
-    border-radius: 25px;
-    width: 110px;
-    height: 55px;
-    margin: 5px auto;
-    transition: 0.4s;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: var(--primary);
-    font-weight: bold;
-    text-decoration: none;
-    font-size: 19pt;
-  }
-  
-  .navbtn:hover {
-    color: white;
-    border-color: white;
-    border-width:13px 5px 5px 5px;
-    text-decoration: none;
-  }
-  .navbtn:hover #new {
-    background-color: white;
-  }
-  #new {
-    color: black;
-    font-size: 10pt;
-    position: absolute;
-    right: -17px;
-    bottom: 39px;
-    background-color: var(--primary);
-    border: 3px solid black;
-    border-radius: 30px;
-    padding: 5px;
-    padding-left: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    visibility: hidden;
-    z-index: 1;
-    transition: 1s;
-        animation-name: text-scale;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
   }
   /* Firefox */
   * {
@@ -271,13 +157,6 @@
       color: red;
     }
   }
-  audio {
-  width: 100%;
-  background-color: #000;
-  outline: 3px solid var(--primary);
-  border-radius: 50px;
-  }
-  
   /* General Styling for Inputs and Button */
   input,
   button,
