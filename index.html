@@ -1,0 +1,44 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>VIOLET'S AMAZING DESIGN TOOLS</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="assets/logo.png" />
+    <script src="designtools.js"></script>
+</head>
+<style>
+    .history-container {
+        overflow: hidden;
+        transition: 0.4s;
+    }
+</style>
+<body onload="calculateScaling()">
+    <header>
+        <section class="round">
+            <h1>VIOLET'S <span class="rainbow">AMAZING</span> DESIGN TOOLS</h1>
+        </section>
+    </header>
+    <main>
+        <section class="top">
+            <h1>SCALE FACTOR CALCULATOR</h1>
+            <a href="https://www.notion.so/How-to-use-Violet-s-scaling-calculator-9b0e484e83114c52829a5f9876532d3c">[how to use this]</a>
+        </section>
+        <section style="text-align:center">
+            <h3>100(R/M) = S</h3>
+            <div style="width: 80%; text-align: right;margin: 25px 0px 25px 0px;">
+                <label for="referenceInput">Reference Length (real-life):</label>
+                <input type="number" id="referenceInput" value="1">
+                <br><br>
+                <label for="measuredInput">Measured Length (in Illustrator):</label>
+                <input type="number" id="measuredInput" value="1">
+            </div>
+            <button onclick="calculateScaling(true)">Calculate Scaling Factor</button>
+        </section>
+        <section CLASS="bottom">
+            <h2 id="result">Scaling Factor: XXX.XXX%</h2> 
+        </section>
+    </main>
+</body>
+</html>
