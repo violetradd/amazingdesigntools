@@ -25,7 +25,7 @@
     margin: 0;
     padding: 0;
     background-color: #171717;
-    background-image: url("../assets/bg.png");
+    background-image: url("assets/bg.png");
     background-attachment: fixed;
     background-size: 320px;
     color: var(--primary);
@@ -42,13 +42,7 @@
   }
   a:hover {
     text-decoration: underline;
-  }
-  a i {
-    transition: 0.5s;
-    -webkit-transition: 0.5s;
-  }
-  a i:hover {
-      opacity: 0.5;
+    opacity: 0.5;
   }
   
   /* Header styles */
@@ -59,8 +53,9 @@
     flex-direction: column;
     padding-top: 32px;
     width: 60%;
-    margin: 0px auto 60px;
+    margin: 0px auto 30px;
   }
+
   /* Main styles */
   main {
     margin: 0 auto;
@@ -89,16 +84,11 @@
     border-radius: 999px;
     margin-bottom: 45px;
   }
-  .rounded {
-    border-radius: 20px;
-  }
   .bottom {
     border-radius: 10px 10px 25px 25px;
     margin-bottom: 45px;
   }
-  footer {
-    text-align: center;
-  }
+
   /* Firefox */
   * {
     scrollbar-width: thin;
@@ -128,6 +118,7 @@
   *::-webkit-scrollbar-thumb:active {
     background-color: #b7b7b7;
   }
+
   .rainbow {
     animation: colorRotate 2s linear 0s infinite;
   }
@@ -157,6 +148,7 @@
       color: red;
     }
   }
+
   /* General Styling for Inputs and Button */
   input,
   button,
@@ -168,7 +160,7 @@
     border-radius: 5px;
     cursor: pointer;
     margin-top: 10px;
-    font-family: 'Noto Color Emoji', 'Roboto Mono', monospace;
+    font-family: 'Monaco', monospace;
     transition: 0.5s;
   }
   
@@ -176,19 +168,19 @@
   input:focus,
   button:focus,
   textarea:focus {
-    outline: none;             /* Remove Default Outline */
-    border-color: #b7b7b7;   /* Slightly Brighter Border on Focus */
+    outline: none;
+    border-color: #b7b7b7;
   }
   
   /* Hover State for Button */
   button:hover {
-    background-color: #333333; /* Darker Background on Hover */
+    background-color: #333333;
     cursor: pointer;
   }
   
   /* Specific Styling for Reference and Measured Input Fields */
   #referenceInput, #measuredInput {
-    width: 200px; /* Adjust width as needed */
+    width: 200px;
   }
   
   /* Hide Number Input Arrows */
