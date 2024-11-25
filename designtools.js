@@ -8,7 +8,7 @@ function calculateScaling() {
     }
   
     const scalingFactor = 100 * (referenceLength / measuredLength);
-    document.getElementById('result').textContent = `Scaling Factor: ${scalingFactor.toFixed(3)}%`;
+    document.getElementById('scaleresult').textContent = `Scaling Factor: ${scalingFactor.toFixed(3)}%`;
   }
 
 document.addEventListener('DOMContentLoaded', function () {
