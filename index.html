@@ -8,34 +8,62 @@
     <link rel="icon" href="assets/logo.png" />
     <script src="designtools.js"></script>
 </head>
-<style>
-    .history-container {
-        overflow: hidden;
-        transition: 0.4s;
-    }
-</style>
 <body>
     <header>
         <headtitle>VIOLET'S <span class="shake">AMAZING</span><span style="opacity: 0%">AMAZING</span> DESIGN TOOLS</headtitle>
     </header>
     <main>
         <sectionhead>SCALE FACTOR CALCULATOR</sectionhead>
-        <section style="text-align:center">
-            <a href="assets/How to use Violet's Scaling Calculator.pdf">[how to use this]</a>
-            <br><br>
-            <h3>100(R/M) = S</h3>
-            <div style="width: 80%; text-align: right;margin: 25px 0px 25px 0px;">
-                <label for="referenceInput">Reference Length (real-life):</label>
-                <input type="number" id="referenceInput" value="1">
-                <br><br>
-                <label for="measuredInput">Measured Length (in Illustrator):</label>
-                <input type="number" id="measuredInput" value="1">
-            </div>
-            <button onclick="calculateScaling()">Calculate Scaling Factor</button>
+        <section>
+            <center>
+                <div style="display:inline-block;text-align: right;margin-bottom: 25px">
+                    <label for="referenceInput">Reference Length (real-life):</label>
+                    <input type="number" id="referenceInput" value="1">
+                    <br><br>
+                    <label for="measuredInput">Measured Length (in Illustrator):</label>
+                    <input type="number" id="measuredInput" value="1">
+                </div>
+                <button onclick="calculateScaling()">Calculate Scaling Factor</button>
+            </center>
+            <a href="assets/How to use Violet's Scaling Calculator.pdf" style="position:relative;top:25px">[how to use this]</a>
         </section>
         <sectionfoot id="scaleresult">Scaling Factor: XXX.XXX%</sectionfoot>
 
-        <div class="space"></div>
+        <space></space>
+
+        <sectionhead>UNIT CONVERTER</sectionhead>
+        <section>
+            <div style="display: flex; align-items: center;justify-content: center;column-gap: 35px;">
+                <div style="text-align: right;display:inline-block;">
+                    <h3>METRIC</h3>
+                    <hr>
+                    <label for="millimetersInput">Millimeters:</label>
+                    <input type="number" id="millimetersInput" placeholder="Enter Measurement." oninput="updateUnits('millimeters')">
+                    <br><br>
+                    <label for="centimetersInput">Centimeters:</label>
+                    <input type="number" id="centimetersInput" placeholder="Enter Measurement." oninput="updateUnits('centimeters')">
+                    <br><br>
+                    <label for="metersInput">Meters:</label>
+                    <input type="number" id="metersInput" placeholder="Enter Measurement." oninput="updateUnits('meters')">
+                </div>
+                <div style="text-align: right;display:inline-block;">
+                    <h3>IMPERIAL</h3>
+                    <hr>
+                    <label for="inchesInput">Inches:</label>
+                    <input type="number" id="inchesInput" placeholder="Enter Measurement." oninput="updateUnits('inches')">
+                    <br><br>
+                    <label for="feetInput">Feet:</label>
+                    <input type="number" id="feetInput" placeholder="Enter Measurement." oninput="updateUnits('feet')">
+                    <br><br>
+                    <label for="yardsInput">Yards:</label>
+                    <input type="number" id="yardsInput" placeholder="Enter Measurement." oninput="updateUnits('yards')">
+                </div>
+            </div>
+        </section>
+
+        <space></space>
+
     </main>
+    <footer>© Snyco Industries 2024-Infinity ; No Rights Reserved</footer>
 </body>
 </html>
