@@ -5,6 +5,11 @@
     overflow-x: hidden;
   }
   
+  @font-face {
+    font-family: DonGraffiti;
+    src: url("../assets/DonGraffiti.otf") format("opentype");
+  }
+
   h1,
   h2,
   h3,
@@ -165,6 +170,11 @@
   .shake {
     animation: shake .5s linear 0s infinite;
     position: absolute;
+  }
+
+  .graf {
+    font-family: 'DonGraffiti';
+    letter-spacing: 5px;
   }
 
   @keyframes shake {
