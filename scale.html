@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>SCALE FACTOR CALCULATOR</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="assets/logo.png" />
+    <script src="designtools.js"></script>
+</head>
+<body>
+    <main>
+        <sectionhead>SCALE FACTOR CALCULATOR</sectionhead>
+        <section>
+            <center>
+                <div style="display:inline-block;text-align: right;margin-bottom: 25px">
+                    <label for="referenceInput">Reference Length (real-life):</label>
+                    <input type="number" id="referenceInput" value="1">
+                    <br><br>
+                    <label for="measuredInput">Measured Length (in Illustrator):</label>
+                    <input type="number" id="measuredInput" value="1">
+                </div>
+                <button onclick="calculateScaling()">Calculate Scaling Factor</button>
+            </center>
+        </section>
+        <sectionfoot id="scaleresult">Scaling Factor: XXX.XXX%</sectionfoot>
+    </main>
+</body>
+</html>
